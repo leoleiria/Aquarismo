@@ -14,8 +14,8 @@ import javax.ws.rs.PUT;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.core.MediaType;
-import entidade.Aquario;
-import rn.AquarioRN;
+import entidade.Peixe;
+import rn.PeixeRN;
 
 /**
  * REST Web Service
@@ -23,9 +23,9 @@ import rn.AquarioRN;
  * @author leole
  */
 @Path("aquario")
-public class AquarioWS {
+public class PeixeWS {
 
-    AquarioRN aquarioRN;
+    PeixeRN peixeRN;
 
     @Context
     private UriInfo context;
@@ -33,24 +33,24 @@ public class AquarioWS {
     /**
      * Creates a new instance of MotorWS
      */
-    public AquarioWS() {
-        aquarioRN = new AquarioRN();
+    public PeixeWS() {
+        peixeRN = new PeixeRN();
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<Aquario> getAquario() {
-        return (aquarioRN.listar());
+    public List<Peixe> getPeixe() {
+        return (peixeRN.listar());
 
     }
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Aquario adicionar(Aquario aquario,
+    public Peixe adicionar(Peixe peixe,
             @Context HttpServletResponse response) {
 
-        aquarioRN.inserir(aquario);
+        peixeRN.inserir(peixe);
 
         response.setStatus(HttpServletResponse.SC_CREATED);
         try {
@@ -58,33 +58,32 @@ public class AquarioWS {
         } catch (IOException ex) {
             throw new javax.ws.rs.InternalServerErrorException();
         }
-        return aquario;
+        return peixe;
     }
 
     @GET
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Aquario getAquarioPorId(@PathParam("id") Long id) {
-        return aquarioRN.buscarPorId(id);
+    public Peixe getPeixePorId(@PathParam("id") Long id) {
+        return PeixeRN.buscarPorId(id);
     }
 
     @PUT
     @Path("/{id}")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    public Aquario atualiza(@PathParam("id") Long id,
-            Aquario aquario){
-        aquario.setId(id);
-        Aquario aquarioAtualizado = aquarioRN.atualizar(aquario);
-        return aquarioAtualizado;
+    public Peixe atualiza(@PathParam("id") Long id,
+            Peixe peixe){
+        peixe.setId(id);
+        Peixe peixeAtualizado = peixeRN.atualizar(peixe);
+        return peixeAtualizado;
     }
     
     @DELETE
     @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Aquario deletar(@PathParam("id") Long id){
-        Aquario aquarioDeletado = aquarioRN.deletar(id);
-        return aquarioDeletado;
+    public Peixe deletar(@PathParam("id") Long id){
+        Peixe peixeDeletado = peixeRN.deletar(id);
+        return peixeDeletado;
     }
-
 }
