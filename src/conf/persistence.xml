@@ -3,6 +3,9 @@
   <persistence-unit name="Aquario" transaction-type="RESOURCE_LOCAL">
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>entidade.Aquario</class>
+    <class>entidade.Cliente</class>
+    <class>entidade.Peixe</class>
+    <class>entidade.Venda</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/aquario"/>

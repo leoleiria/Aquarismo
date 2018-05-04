@@ -27,12 +27,9 @@ public class ClienteWS {
 
     ClienteRN clienteRN;
 
-    @Context
-    private UriInfo context;
 
-    /**
-     * Creates a new instance of MotorWS
-     */
+
+  
     public ClienteWS() {
         clienteRN = new ClienteRN();
     }

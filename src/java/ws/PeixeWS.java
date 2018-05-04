@@ -22,17 +22,13 @@ import rn.PeixeRN;
  *
  * @author leole
  */
-@Path("aquario")
+@Path("peixe")
 public class PeixeWS {
 
     PeixeRN peixeRN;
 
-    @Context
-    private UriInfo context;
 
-    /**
-     * Creates a new instance of MotorWS
-     */
+  
     public PeixeWS() {
         peixeRN = new PeixeRN();
     }

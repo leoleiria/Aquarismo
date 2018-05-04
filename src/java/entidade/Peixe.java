@@ -7,12 +7,14 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.xml.bind.annotation.XmlRootElement;
 
 /**
  *
  * @author leole
  */
 @Entity
+@XmlRootElement
 public class Peixe implements Serializable{
 @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

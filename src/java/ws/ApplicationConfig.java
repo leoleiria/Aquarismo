@@ -28,6 +28,7 @@ public class ApplicationConfig extends Application {
         resources.add(ws.AquarioWS.class);
         resources.add(ws.ClienteWS.class);
         resources.add(ws.PeixeWS.class);
+        resources.add(ws.VendaWS.class);
     }
     
 }

@@ -27,12 +27,7 @@ public class AquarioWS {
 
     AquarioRN aquarioRN;
 
-    @Context
-    private UriInfo context;
-
-    /**
-     * Creates a new instance of MotorWS
-     */
+   
     public AquarioWS() {
         aquarioRN = new AquarioRN();
     }
