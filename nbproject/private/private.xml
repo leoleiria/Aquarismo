@@ -3,21 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/rn/AquarioRN.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/ws/ApplicationConfig.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/entidade/Peixe.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/entidade/Cliente.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/entidade/Venda.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/web/META-INF/context.xml</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/entidade/Aquario.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/ws/ClienteWS.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/ws/VendaWS.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/rn/PeixeRN.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/rn/VendaRN.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/ws/PeixeWS.java</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/rn/ClienteRN.java</file>
+            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/web/_javascript/funcoes.js</file>
+            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/web/index.html</file>
             <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/conf/persistence.xml</file>
-            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/src/java/ws/AquarioWS.java</file>
+            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/web/_javascript/peixes.json</file>
+            <file>file:/C:/Users/leole/Documents/NetBeansProjects/Aquario/web/_javascript/peixaria.js</file>
         </group>
     </open-files>
 </project-private>

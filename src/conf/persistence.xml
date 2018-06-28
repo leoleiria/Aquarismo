@@ -4,14 +4,14 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>entidade.Aquario</class>
     <class>entidade.Cliente</class>
-    <class>entidade.Peixe</class>
     <class>entidade.Venda</class>
+    <class>entidade.Peixe</class>
     <exclude-unlisted-classes>true</exclude-unlisted-classes>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/aquario"/>
       <property name="javax.persistence.jdbc.user" value="postgres"/>
       <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="149687"/>
+      <property name="javax.persistence.jdbc.password" value="admin"/>
       <property name="javax.persistence.schema-generation.database.action" value="create"/>
     </properties>
   </persistence-unit>

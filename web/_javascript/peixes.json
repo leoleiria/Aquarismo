@@ -1,0 +1,49 @@
+[{
+	"nome":"Ocealaris",
+	"imagem":"__imagens/001.jpg",
+	"descricao":"Nemo",
+	"uso":"veicular"
+},
+{
+	"nome":"Ragus Blue",
+	"imagem":"__imagens/002.jpg",
+	"descricao":"Dory de Procurando Nemo",
+	"uso":"Aquario"
+},
+{
+	"nome":"JellyFish",
+	"imagem":"__imagens/003.jpg",
+	"descricao":"O que o Bob Esponja gosta de caçar!",
+	"uso":"Aquario"
+},
+{
+	"nome":"Star Fish",
+	"imagem":"__imagens/004.jpg",
+	"descricao":"Elas são lindas!",
+	"uso":"Aquario"
+},
+{
+	"nome":"Shark",
+	"imagem":"__imagens/005.jpg",
+	"descricao":"Veja os filmes Shark Attack!",
+	"uso":"Aquario"
+},
+{
+	"nome":"Modelo Tork JA",
+	"imagem":"img/motor-3.jpg",
+	"descricao":"Cabe\u00e7otes individuais com 4 v\u00e1lvulas por cilindro",
+	"uso":"industrial"
+},
+{
+	"nome":"Modelo Combo Alfa",
+	"imagem":"img/motor-1.jpg",
+	"descricao":"Cabe\u00e7otes individuais com 4 v\u00f3lvulas por cilindro",
+	"uso":"maritimo"
+},
+{
+	"nome":"Modelo Combo Beta",
+	"imagem":"img/motor-2.jpg",
+	"descricao":"Cabe\u00e7otes individuais com 4 v\u00f3lvulas por cilindro",
+	"uso":"maritimo"
+}
+]
