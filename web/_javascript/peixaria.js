@@ -1,7 +1,7 @@
 $(document).ready(function(){
-    
+
     loadJson();
-    
+
 });
 
 function loadJson(){
@@ -39,9 +39,16 @@ function trataJson(jsonObject){
         content.append(dd);
         content.append(dt);
         content.append(ddDesc);
+        montaclick(content, jsonObject[item]);
+
       }
   $("main").append(section)
-
     }
-  
+
 }
+ function montaclick(content,object){
+   content.click(function(){
+     $("#cEspcAtual").val(object.especie);
+     $("#cID").val(object.id)
+   })
+ }

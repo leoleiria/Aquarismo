@@ -22,9 +22,9 @@
 
       <h1>Menu Principal</h1>
       <ul>
-        <li onmouseover="mudaFoto('__imagens/peixe.png')" onmouseout="mudaFoto('__imagens/peixe2.png')"><a href="index.html">Home</a></li>
-        <li onmouseover="mudaFoto('__imagens/peixe.png')" onmouseout="mudaFoto('__imagens/peixe3.png')"><a href="adicionar.html">Adicionar peixe</a></li>
-        <li onmouseover="mudaFoto('__imagens/peixe.png')" onmouseout="mudaFoto('__imagens/peixe4.png')"><a href="editar.html">Adicionar peixe</a></li>
+        <li onmouseover="mudaFoto('__imagens/peixe4.png')" onmouseout="mudaFoto('__imagens/peixe2.png')"><a href="index.html">Home</a></li>
+        <li onmouseover="mudaFoto('__imagens/peixe4.png')" onmouseout="mudaFoto('__imagens/peixe3.png')"><a href="adicionar.html">Adicionar peixe</a></li>
+        <li onmouseover="mudaFoto('__imagens/peixe4.png')" onmouseout="mudaFoto('__imagens/peixe4.png')"><a href="editar.html">Edita peixe</a></li>
       </ul>
 
     </nav>
@@ -36,7 +36,14 @@
 
 </header>
       <main>
-
+        <br><br><br>
+        <form class="editar" id="editar" action="index.html" method="post">
+          <fieldset id="edit"><legend>Edite um Peixe</legend>
+              <p><label for="cEspcAtual">Nome da Espécie Atual :</label><input type="text" name="EspecAtual" id="cEspcAtual" size="30" maxlength="30" placeholder="Espécie" readonly></p>
+              <p><label for="cID"></label><input type="text" name="IDpeixe" id="cID" size="30" maxlength="30" hidden></p>
+              <p><label for="cEspcNovo">Novo Nome da Espécie:</label><input type="text" name="EspecNovo" id="cEspcNovo" size="30" maxlength="30" placeholder="Espécie"></p>
+              <input type="submit" name="Enviar" value="Enviar">
+              </form>
 
       </main>
 
