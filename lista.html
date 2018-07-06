@@ -37,15 +37,15 @@
 </header>
       <main>
         <br><br><br>
-        <form class="editar" id="formulario" style="display:none"></form>
-        <form class="editar" id="editar">
+        <form class="editar" id="editar" action="index.html" method="post">
           <fieldset id="edit"><legend>Edite um Peixe</legend>
               <p><label for="cEspcAtual">Nome da Espécie Atual :</label><input type="text" name="EspecAtual" id="cEspcAtual" size="30" maxlength="30" placeholder="Espécie" readonly></p>
               <p><label for="cID"></label><input type="text" name="IDpeixe" id="cID" size="30" maxlength="30" hidden></p>
-              <p><label for="cEspcNovo">Novo Nome da Espécie:</label><input type="text" name="EspecNovo" id="txtespecie" size="30" maxlength="30" placeholder="Espécie"></p>
+              <p><label for="cEst"></label><input type="text" name="EstPeix" id="cEst" size="30" maxlength="30" hidden></p>
+              <p><label for="cEspcNovo">Novo Nome da Espécie:</label><input type="text" name="EspecNovo" id="cEspcNovo" size="30" maxlength="30" placeholder="Espécie"></p>
               <input type="submit" name="Enviar" value="Enviar">
-        </form>
-        
+              </form>
+
       </main>
 
 
@@ -54,11 +54,6 @@
 
 </footer>
 <script src="_javascript/peixaria.js"></script>
-<script src="_javascript/dominio/Peixe.js"></script>
-            <script src="_javascript/service/PeixeHttpService.js"></script>
-            <script src="_javascript/view/PeixeView.js"></script>
-            <script src="_javascript/controller/PeixeController.js"></script>
-            <script src="_javascript/app.js"></script>
 
 </div>
 </body>

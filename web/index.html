@@ -1,54 +1,67 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <title>Aquario</title>
-    <script language="javascript" src="_javascript/funcoes.js"></script>
-    <link rel="stylesheet" type="text/css" href="_css/estilo.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
-  <body>
-    <div id="interface">
+    <head>
+        <meta charset="utf-8">
+        <title>Aquario</title>
+        <script language="javascript" src="_javascript/funcoes.js"></script>
+        <link rel="stylesheet" type="text/css" href="_css/estilo.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <div id="interface">
 
-      <header id="cabecalho">
-        <hgroup>
-        <h1>Aquario</h1>
-        <h2>Onde você guarda o seus peixes</h2>
-      </hgroup>
+            <header id="cabecalho">
+                <hgroup>
+                    <h1>Aquario</h1>
+                    <h2>Onde você guarda o seus peixes</h2>
+                </hgroup>
 
-      <img id="icone" src="__imagens/peixe.png">
+                <img id="icone" src="__imagens/peixe.png">
 
-    <nav id="menu">
+                <nav id="menu">
 
-      <h1>Menu Principal</h1>
-      <ul>
-        <li onmouseover="mudaFoto('__imagens/peixe.png')" onmouseout="mudaFoto('__imagens/peixe2.png')"><a href="index.html">Home</a></li>
-        <li onmouseover="mudaFoto('__imagens/peixe.png')" onmouseout="mudaFoto('__imagens/peixe3.png')"><a href="adicionar.html">Adicionar peixe</a></li>
-        <li onmouseover="mudaFoto('__imagens/peixe.png')" onmouseout="mudaFoto('__imagens/peixe4.png')"><a href="editar.html">Edita peixe</a></li>
+                    <h1>Menu Principal</h1>
+                    <ul>
+                      <li onmouseover="mudaFoto('__imagens/peixe4.png')" onmouseout="mudaFoto('__imagens/peixe2.png')"><a href="index.html">Home</a></li>
+                      <li onmouseover="mudaFoto('__imagens/peixe3.png')" onmouseout="mudaFoto('__imagens/peixe3.png')"><a href="listar.html">Listar peixe</a></li>
+                      <li onmouseover="mudaFoto('__imagens/peixe4.png')" onmouseout="mudaFoto('__imagens/peixe4.png')"><a href="editar.html">Edita peixe</a></li>
+                    </ul>
 
-      </ul>
+                </nav>
+            </header>
 
-    </nav>
-  </header>
+            <section id="corpo">
+                <article id="principal"></article>
+                <header id="cabecalho-artigo">
+                    <h1>Cadastro de Peixes</h1>
 
-<section id="corpo">
-  <article id="principal">
-<header id="cabecalho-artigo">
+                    <form id="formulario">
+                        <input type="hidden" name="id" />
+                        <label for="txtespecie" >Especie:</label>
+                        <input type="text" id="txtespecie"><br/>
+                        <label for="txtestoque">Estoque:</label>
+                        <input type="text" id="txtestoque"><br/><br/><br/>
+                        <input type="submit" id="btnsalvar" value="Salvar">
+                        <input type="reset" value="Cancelar"><br/>
+                    </form>
+                </header>
+                <main id="peixes">
 
-</header>
-      <main>
+
+                </main>
 
 
-      </main>
+            </section>
+            <footer id="rodape" >
 
+            </footer>
 
+            <script src="_javascript/dominio/Peixe.js"></script>
+            <script src="_javascript/service/PeixeHttpService.js"></script>
+            <script src="_javascript/view/PeixeView.js"></script>
+            <script src="_javascript/controller/PeixeController.js"></script>
+            <script src="_javascript/app.js"></script>
 
-<footer id="rodape" >
-
-</footer>
-<script src="_javascript/peixaria.js"></script>
-
-</div>
-</body>
+    </body>
 
 </html>

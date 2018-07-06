@@ -32,7 +32,7 @@ function trataJson(jsonObject){
         var imagem = $("<img alt ='"+jsonObject[item].especie + "' src='__imagens/00"+(pos+1)+".jpg'>")
         figure.append(imagem);
         dd.append(figure);
-        var dt = $("<dt><a href='#'>"+jsonObject[item].especie+"</a>")
+        var dt = $("<dt><a href='#'>"+jsonObject[item].id+" - "+jsonObject[item].especie+"</a>")
         var ddDesc = $("<dd>Estoque:"+jsonObject[item].estoque+"</dd>")
         var hr = $("<hr>");
         content.append(hr);
@@ -49,6 +49,7 @@ function trataJson(jsonObject){
  function montaclick(content,object){
    content.click(function(){
      $("#cEspcAtual").val(object.especie);
-     $("#cID").val(object.id)
+     $("#cID").val(object.id);
+     $("#cEst").val(object.estoque);
    })
  }
