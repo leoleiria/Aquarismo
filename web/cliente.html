@@ -23,7 +23,7 @@
       <h1>Menu Principal</h1>
       <ul>
         <li onmouseover="mudaFoto('__imagens/peixe4.png')" onmouseout="mudaFoto('__imagens/peixe2.png')"><a href="index.html">Home</a></li>
-          <li onmouseover="mudaFoto('__imagens/peixe3.png')" onmouseout="mudaFoto('__imagens/peixe3.png')"><a href="cliente.html">Clientes</a></li>
+        <li onmouseover="mudaFoto('__imagens/peixe3.png')" onmouseout="mudaFoto('__imagens/peixe3.png')"><a href="cliente.html">Clientes</a></li>
         <li onmouseover="mudaFoto('__imagens/peixe4.png')" onmouseout="mudaFoto('__imagens/peixe4.png')"><a href="editar.html">Edita peixe</a></li>
       </ul>
 
@@ -37,15 +37,17 @@
 </header>
       <main>
         <br><br><br>
-        <form class="editar" id="formulario" style="display:none"></form>
-        <form class="editar" id="editar">
-          <fieldset id="edit"><legend>Edite um Peixe</legend>
-              <p><label for="cEspcAtual">Nome da Espécie Atual :</label><input type="text" name="EspecAtual" id="cEspcAtual" size="30" maxlength="30" placeholder="Espécie" readonly></p>
-              <p><label for="cID"></label><input type="text" name="IDpeixe" id="cID" size="30" maxlength="30" hidden></p>
-              <p><label for="cEspcNovo">Novo Nome da Espécie:</label><input type="text" name="EspecNovo" id="txtespecie" size="30" maxlength="30" placeholder="Espécie"></p>
+        <form class="editar" id="cliente" style="display:none"></form>
+        <form class="editar" id="formulariocli">
+          <fieldset id="edit"><legend>Cliente</legend>
+              <p><label for="cEspcAtual">Nome do Cliente :</label><input type="text" name="EspecAtual" id="nomecli" size="30" maxlength="30" placeholder="Nome do Cliente" ></p>
+              <p><label for="cID"></label><input type="text" id="cID" hidden></p>
+              
               <input type="submit" name="Enviar" value="Enviar">
         </form>
+        </br></br></br></br></br></br></br>
         
+        <div id="clientes"></div>
       </main>
 
 
@@ -53,12 +55,12 @@
 <footer id="rodape" >
 
 </footer>
-<script src="_javascript/peixaria.js"></script>
-<script src="_javascript/dominio/Peixe.js"></script>
-            <script src="_javascript/service/PeixeHttpService.js"></script>
-            <script src="_javascript/view/PeixeView.js"></script>
-            <script src="_javascript/controller/PeixeController.js"></script>
-            <script src="_javascript/app.js"></script>
+
+<script src="_javascript/dominio/Cliente.js"></script>
+            <script src="_javascript/service/ClienteHttpService.js"></script>
+            <script src="_javascript/view/ClienteView.js"></script>
+            <script src="_javascript/controller/ClienteController.js"></script>
+            <script src="_javascript/appcli.js"></script>
 
 </div>
 </body>
